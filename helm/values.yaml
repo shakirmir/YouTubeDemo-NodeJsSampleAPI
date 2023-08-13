@@ -10,7 +10,7 @@ application:
 replicaCount: 1
 
 image:
-  repository: techparkacrhelmdemo.azurecr.io
+  repository: myacr321012new.azurecr.io
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "v1"
