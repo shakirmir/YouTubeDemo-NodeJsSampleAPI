@@ -38,12 +38,14 @@ stages:
         tags: |
           $(tag)
    
-    - task: HelmDeploy@0
-      displayName: helm package
+    - task: HelmInstaller@0
       inputs:
-          command: 'package'
-          chartPath: 'shakirhelm'
+        helmVersion: '2.14.1'
+        installKubectl: true
     
+    - task: HelmDeploy@0
+      inputs:
+        command: 'package'
     - task: PublishBuildArtifacts@1
       displayName: publish
       inputs:
