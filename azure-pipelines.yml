@@ -42,7 +42,7 @@ stages:
       displayName: helm package
       inputs:
           command: 'package'
-          chartPath: 'helmchartshakir'
+          chartPath: 'shakirhelm'
     
     - task: PublishBuildArtifacts@1
       displayName: publish
