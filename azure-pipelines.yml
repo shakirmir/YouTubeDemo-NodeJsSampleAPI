@@ -46,6 +46,7 @@ stages:
     - task: HelmDeploy@0
       inputs:
         command: 'package'
+        chartPath: 'YouTubeDemo-NodeJsSampleAPI/myhelmnodejs'
     - task: PublishBuildArtifacts@1
       displayName: publish
       inputs:
